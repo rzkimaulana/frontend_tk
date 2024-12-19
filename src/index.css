@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Ubah warna panah */
+}
+
+.swiper-pagination-bullet {
+  background-color: #ddd;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000; /* Warna saat aktif */
+}
