@@ -22,11 +22,15 @@ const Layout = ({ children }) => {
   const isAdminPage = location.pathname.startsWith("/admin");
 
   return (
-    <>
-      {!isAdminPage && <Header />} {/* Tampilkan Header jika bukan halaman admin */}
-      <main>{children}</main>
-      {!isAdminPage && <Footer />} {/* Tampilkan Footer jika bukan halaman admin */}
-    </>
+    <div className="flex flex-col min-h-screen">
+      {!isAdminPage && <Header />}
+      
+      {/* Kontainer utama menggunakan flex-grow agar footer tetap di bawah */}
+      
+      <main className="flex-grow">{children}</main>
+
+      {!isAdminPage && <Footer />}
+    </div>
   );
 };
 
