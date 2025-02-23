@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
-  const phoneNumber = "6289628526095"; // Ganti dengan nomor yang dituju
+  const phoneNumber = "6285266131457"; // Ganti dengan nomor yang dituju
   const message = encodeURIComponent("Halo, saya ingin bertanya tentang pendaftaran di TK Insan Prestasi."); // Isi pesan otomatis
 
   return (
