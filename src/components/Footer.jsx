@@ -6,11 +6,11 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="container mx-auto flex justify-between items-center">
         <p className="text-sm">&copy; 2024 Sekolah Taman Kanak-Kanak</p>
         <p className="text-sm">Dibuat oleh Rizki Maulana</p>
         <a
-          href={whatsappLink}
+          href={`https://wa.me/${phoneNumber}?text=${message}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-green-400 hover:underline flex items-center gap-2"
